@@ -2,46 +2,6 @@
 Dimensionador de bombas
 
     
- <!doctype html>
- <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dimensionador Conab+</title>
-    <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://019c051c-037b-7493-939f-92ee174943ac.arena.site/" />
-    <meta property="og:title" content="Dimensionador Conab+" />
-    <meta
-      property="og:description"
-      content="Check out what I built in Arena's Code Arena - Content is user-generated and unverified"
-    />
-    <meta property="og:image" content="https://screenshot-taker-prod.weichiang.workers.dev/message/019c051c-037b-7493-939f-92ee174943ac/og-image.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://019c051c-037b-7493-939f-92ee174943ac.arena.site/" />
-    <meta property="twitter:title" content="Dimensionador Conab+" />
-    <meta
-      property="twitter:description"
-      content="Check out what I built in Arena's Code Arena - Content is user-generated and unverified"
-    />
-    <meta property="twitter:image" content="https://screenshot-taker-prod.weichiang.workers.dev/message/019c051c-037b-7493-939f-92ee174943ac/og-image.webp" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-    <script>
-      const REPORT_SURVEY_ID = "019a46ef-f7dd-0000-58be-14fbb8b91d15";
-      const MESSAGE_ID = "019c051c-037b-7493-939f-92ee174943ac";
-      const EVALUATION_SESSION_ID = "019be5e3-c659-7928-8f2f-ff532f8a913d";
-      const getStorageKey = (prefix) => `${prefix}_${MESSAGE_ID}`;
-      const hasStorageKey = (prefix) => !!localStorage.getItem(getStorageKey(prefix));
- // snippet below comes from posthog's documentation for running in html pages
-      // prettier-ignore
-      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-
       const POSTHOG_API_KEY = "phc_LG7IJbVJqBsk584rbcKca0D5lV2vHguiijDrVji7yDM";
       if (POSTHOG_API_KEY) {
         posthog.init(POSTHOG_API_KEY, {
