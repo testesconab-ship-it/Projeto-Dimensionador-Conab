@@ -388,7 +388,7 @@ Dimensionador de bombas
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Potência (CV) *</label>
-                            <input type="number" id="cadPotencia" class="filter-input w-full px-4 py-2 border border-gray-300 rounded-lg" step="0.1" required>
+                            <input type="number" id="cadPotencia" class="filter-input w-full px-4 py-2 border border-gray-300 rounded-lg" step="0.001" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Polos *</label>
@@ -3519,7 +3519,7 @@ Dimensionador de bombas
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Potência (CV) *</label>
-                            <input type="number" id="editPotencia" value="${bomba.potencia}" class="filter-input w-full px-4 py-2 border border-gray-300 rounded-lg" step="0.1" required>
+                            <input type="number" id="editPotencia" value="${bomba.potencia}" class="filter-input w-full px-4 py-2 border border-gray-300 rounded-lg" step="0.001" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Polos *</label>
