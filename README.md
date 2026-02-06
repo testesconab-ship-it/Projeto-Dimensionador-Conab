@@ -1,5 +1,7 @@
 # Projeto-Dimensionador-Conab
 Dimensionador de bombas
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -2790,6 +2792,13 @@ Dimensionador de bombas
                     { label: 'Pressao Max', values: bombasCompare.map(b => (b.pressaoMax || '-') + ' mca') },
                     { label: 'Material', values: bombasCompare.map(b => b.material || '-') },
                     { label: 'Tipo Rotor', values: bombasCompare.map(b => b.tipoRotor || '-') },
+                    { label: 'Posicao', values: bombasCompare.map(b => b.posicao === 'horizontal' ? 'Horizontal' : b.posicao === 'vertical' ? 'Vertical' : (b.posicao || '-')) },
+                    { label: 'Inversor', values: bombasCompare.map(b => b.inversor === 'sim' ? 'Sim' : b.inversor === 'nao' ? 'Nao' : (b.inversor || '-')) },
+                    { label: 'Categoria', values: bombasCompare.map(b => b.categoria ? b.categoria.charAt(0).toUpperCase() + b.categoria.slice(1) : '-') },
+                    { label: 'Tipo Conexao', values: bombasCompare.map(b => b.conexao === 'rosca' ? 'Rosca' : b.conexao === 'flange' ? 'Flange' : (b.conexao || '-')) },
+                    { label: 'Comprimento', values: bombasCompare.map(b => (b.comprimento || '-') + ' mm') },
+                    { label: 'Largura', values: bombasCompare.map(b => (b.largura || '-') + ' mm') },
+                    { label: 'Altura', values: bombasCompare.map(b => (b.alturaDim || '-') + ' mm') },
                     { label: 'Peso', values: bombasCompare.map(b => (b.peso || '-') + ' kg') },
                     { label: 'Estoque', values: bombasCompare.map(b => b.estoque === 'disponivel' ? 'Em Estoque' : b.estoque === 'baixo' ? 'Baixo' : 'Esgotado') }
                 ];
